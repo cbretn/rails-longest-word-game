@@ -1,0 +1,12 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.scrabble-letter {
+  padding: 10px 10px !important;
+  background-color: #76BED0;
+  border: 1px solid #3E889B;
+  color: white;
+  font-weight: bold;
+  margin: 5px 5px;
+  text-transform: uppercase;
+}

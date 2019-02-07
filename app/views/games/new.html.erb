@@ -1,0 +1,15 @@
+<h1>Let's Play Scrabble</h1>
+<p>Here are your letters</p>
+<ul class="list-inline">
+  <% @letters.each do |letter| %>
+    <li class="scrabble-letter"> <%= letter %> </li>
+  <% end %>
+</ul>
+<br><br>
+<form action="score" method="POST" class="form-inline">
+  <label for="word">Enter your longest word</label>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" class="form-control" name="word">
+  <input id="letters" name="letters" type="hidden" value="<%= @letters %>" />
+  <input type="submit" class="btn btn-info" name="submit" value="Enter">
+</form>
